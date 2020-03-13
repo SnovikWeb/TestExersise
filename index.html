@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestExersise</title>
+
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+</head>
+<body>
+
+<h1>Hacker News API</h1>
+
+<div class="container">
+
+    <sidebar id="search">
+        <form action="#" id="form-filter">
+
+            <div id="params">
+                <div class="form-group form-group--column">
+                    <label for="hitsPerPage">Amount</label>
+                    <input type="number" name="hitsPerPage" id="hitsPerPage" value="20" min="0" required>
+                </div>
+            </div>
+
+            <div id="tags">
+                <div class="form-group form-group--column">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div class="form-group form-group--row">
+                    <label for="story">Story</label>
+                    <input type="checkbox" name="story" id="story">
+                </div>
+                <div class="form-group form-group--row">
+                    <label for="front_page">On front page</label>
+                    <input type="checkbox" name="front_page" id="front_page">
+                </div>
+                <div class="form-group form-group--row">
+                    <label for="poll">Poll</label>
+                    <input type="checkbox" name="poll" id="poll">
+                </div>
+                <div class="form-group form-group--row">
+                    <label for="pollopt">Pollopt</label>
+                    <input type="checkbox" name="pollopt" id="pollopt">
+                </div>
+                <div class="form-group form-group--row">
+                    <label for="show_hn">Show hn</label>
+                    <input type="checkbox" name="show_hn" id="show_hn">
+                </div>
+                <div class="form-group form-group--row">
+                    <label for="ask_hn">Ask hn</label>
+                    <input type="checkbox" name="ask_hn" id="ask_hn">
+                </div>
+            </div>
+
+            <div id="numaric-fields">
+                <div class="form-group form-group--row">
+                    <label for="byDate">Search by date</label>
+                    <input type="checkbox" name="byDate" id="byDate">
+                </div>
+                <div class="form-group form-group--column">
+                    <label for="created_after">Created after</label>
+                    <input type="date" name="created_after" id="created_after" >
+                </div>
+                <div class="form-group form-group--column">
+                    <label for="created_before">Created before</label>
+                    <input type="date" name="created_before" id="created_before" >
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </sidebar>
+
+    <div class="block posts">
+
+    </div>
+
+</div>
+
+<script type="module" src="assets/dist/js/app.js"></script>
+</body>
+</html>
