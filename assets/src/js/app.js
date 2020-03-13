@@ -26,7 +26,6 @@ class App {
 
     /*  Display posts per page  */
     renderPosts(posts = []) {
-        this.postsContainer.classList.add('hidden');
         this.postsContainer.innerHTML = '';
 
         if (window.Worker) {
